@@ -14,11 +14,10 @@ const bot = new Telegraf(BOT_TOKEN);
 bot.start((ctx) => {
   ctx.reply('Добро пожаловать в Козыринг 2.0! Запустите мини-приложение:', {
     reply_markup: {
-      keyboard: [
+      inline_keyboard: [
         [{ text: 'Открыть Козыринг 2.0', web_app: { url: WEBAPP_URL } }]
-      ],
-      resize_keyboard: true
-    }
+      ]
+    }    
   });
 });
 
